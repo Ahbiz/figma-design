@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  color: #212529;
+}
+
+/* HEADER AND NAVIGATION-STYLES */
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+header .first-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 42px;
+  background-color: #f8f9fa;
+}
+header .first-section nav h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0px 16px 0px 0px;
+  padding: 5px 0px;
+}
+header .first-section nav .hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+header .second-section {
+  padding: 42px 24px;
+}
+header .second-section h4 {
+  margin: 0px 0px 8px;
+  font-size: 21.36px;
+}
+header .second-section h1 {
+  margin: 0px 0px 8px;
+  font-size: 37.68px;
+}
+header .second-section p {
+  font-weight: 400px;
+  font-size: 17px;
+  line-height: 27px;
+  margin: 0px 0px 16px;
+}
+header .second-section button {
+  padding: 24px 64px;
+  background-color: #212529;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header-image {
+  padding: 24px 12px;
+  text-align: right;
+  margin-top: 24px;
+}
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* BODY STYLES */
+
+main .section-1 .main-logo-img-sizing {
+  width: 35px;
+  height: auto;
+}
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 42px;
+  padding: 42px 42px;
+}
+
+div.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.skills .skills-title{
+margin: 0px 0px 8px;
+font-size: 20px;
+}
+div.skills p.subtitle{
+  font-size: 20px;
+  margin: -4px 0px 20px;
+  padding: 20px;
+  line-height: 27px;
+}
+div.section-2-images{
+margin-bottom: 16px;
+}
+section.section-3 h2{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+section.section-3 .latest-works-img{
+max-width: 100%;
+height: auto;
+padding: 15px;
+}
+section.section-3 div.title{
+  padding: 16px;
+}
+section.section-3 .latest-work-title{
+  font-size: 20px;
+  margin: 0px 0px 8px;
+}
+section.section-4{
+  margin-top: 100px;
+    font-size: 16px;
+    font-weight: 600;
+}
+section.section-4 .client-testimonial{
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 24px 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+ 
+}
+
+section.section-4 p{
+  line-height: 27px;
+  margin: 0px 0px 48px;
+}
+.stars{
+  padding-bottom: 15px;
+}
+.client-img{
+  border-radius: 100%;
+  padding-left: 0px;
+  padding-right: 10px;
+  max-width: 100%;
+  height: auto;
+}
+div.client-testimonial h6{
+  font-size: 16px;
+  margin: -13px;
+  padding-left: 45px;
+}
+div.client-testimonial .mute{
+  font-weight: 270;
+}
+footer h2{
+  font-size: 24.08px;
+  font-weight: 500;
+  margin: 0px 0px 8px;
+  text-align: center;
+}
+footer p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin: 8px 0px 16px;
+  padding: 20px;
+}
+footer div.socials{
+  margin: 48px 0px 0px;
+  text-align: center;
+  font-size: 25px;
+}
+footer div.footer-input-section{
+  text-align: center;
+  margin: 0px 0px 0px;
+}
+footer div.footer-input-section button{
+  padding: 8px 16px;
+  background-color: #212529;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: -155px;
+}
+footer div.footer-input-section input{
+  padding: 8px;
+  margin: 8px 0px;
+  background-color: #f3f3f3;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 250px;
+}
