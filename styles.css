@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
   color: #212529;
+  overflow-x: hidden;
 }
 
 /* HEADER AND NAVIGATION-STYLES */
@@ -12,6 +13,9 @@
 header {
   padding: 0px;
   margin: 0px;
+}
+header .first-section {
+  margin-bottom: 50px;
 }
 header .first-section nav {
   display: flex;
@@ -57,7 +61,7 @@ header .second-section button {
   font-size: 20px;
   cursor: pointer;
 }
-.header-image {
+.header-image-con {
   padding: 24px 12px;
   text-align: right;
   margin-top: 24px;
@@ -87,81 +91,91 @@ div.skills {
   flex-direction: column;
   align-items: center;
 }
-div.skills .skills-title{
-margin: 0px 0px 8px;
-font-size: 20px;
-}
-div.skills p.subtitle{
+div.skills .skills-title {
+  margin: 0px 0px 8px;
   font-size: 20px;
+  text-align: center;
+}
+div.skills p.subtitle {
+  text-align: center;
+  font-size: 17px;
   margin: -4px 0px 20px;
   padding: 20px;
   line-height: 27px;
 }
-div.section-2-images{
-margin-bottom: 16px;
+div.section-2-images {
+  margin-bottom: 16px;
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  align-items: center;
 }
-section.section-3 h2{
+section.section-3 h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 24px;
   text-align: center;
 }
-section.section-3 .latest-works-img{
-max-width: 100%;
-height: auto;
-padding: 15px;
+div.latest-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-section.section-3 div.title{
+section.section-3 .latest-works-img {
+  max-width: 100%;
+  height: auto;
+}
+section.section-3 div.title {
   padding: 16px;
 }
-section.section-3 .latest-work-title{
+section.section-3 .latest-work-title {
   font-size: 20px;
   margin: 0px 0px 8px;
 }
-section.section-4{
+section.section-4 {
   margin-top: 100px;
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
-section.section-4 .client-testimonial{
+section.section-4 div.client-testimonial {
   background-color: #f3f3f3;
   text-align: center;
   padding: 24px 50px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-bottom: 20px;
- 
 }
-
-section.section-4 p{
+section.section-4 p {
   line-height: 27px;
   margin: 0px 0px 48px;
 }
-.stars{
+.stars {
   padding-bottom: 15px;
 }
-.client-img{
+.client-img {
   border-radius: 100%;
   padding-left: 0px;
   padding-right: 10px;
   max-width: 100%;
   height: auto;
 }
-div.client-testimonial h6{
+div.client-testimonial h6 {
   font-size: 16px;
   margin: -13px;
   padding-left: 45px;
 }
-div.client-testimonial .mute{
+div.client-testimonial .mute {
   font-weight: 270;
 }
-footer h2{
+footer h2 {
   font-size: 24.08px;
   font-weight: 500;
   margin: 0px 0px 8px;
   text-align: center;
 }
-footer p{
+footer p {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -169,16 +183,16 @@ footer p{
   margin: 8px 0px 16px;
   padding: 20px;
 }
-footer div.socials{
+footer div.socials {
   margin: 48px 0px 0px;
   text-align: center;
   font-size: 25px;
 }
-footer div.footer-input-section{
+footer div.footer-input-section {
   text-align: center;
   margin: 0px 0px 0px;
 }
-footer div.footer-input-section button{
+footer div.footer-input-section button {
   padding: 8px 16px;
   background-color: #212529;
   color: white;
@@ -188,7 +202,7 @@ footer div.footer-input-section button{
   cursor: pointer;
   margin-left: -155px;
 }
-footer div.footer-input-section input{
+footer div.footer-input-section input {
   padding: 8px;
   margin: 8px 0px;
   background-color: #f3f3f3;
@@ -196,4 +210,305 @@ footer div.footer-input-section input{
   border-radius: 8px;
   font-size: 16px;
   width: 250px;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 320px) {
+  nav .new-links {
+    display: none;
+  }
+  div.header-image-con .header-img {
+    width: 30rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .hamburger {
+    display: none;
+  }
+  nav .new-links {
+    display: block;
+  }
+  nav .new-links {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+  }
+  .second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -180px;
+  }
+  .second-section .header-image-con {
+    margin-top: 100px;
+  }
+  div.header-image-con .header-img {
+    width: 25rem;
+    max-width: 100%;
+    height: auto;
+  }
+  div.text-part {
+    margin-top: 85px;
+    padding: 20px;
+  }
+  div.text-part h4 {
+    font-size: 25px;
+    font-weight: 600;
+    max-width: 100%;
+  }
+  div.text-part h1 {
+    font-size: 75px;
+    max-width: 100%;
+  }
+  section.section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  section.section-1 .main-logo-img-sizing {
+    width: 100px;
+    height: auto;
+  }
+  section.section-1 .testing {
+    width: 55px;
+    height: auto;
+  }
+  div.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.latest-works {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  div.card-con {
+    width: 200px;
+  }
+  section.section-4 div.client-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  div.client-testimonial {
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  footer {
+    display: flex;
+    gap: 650px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  footer div.closing-title {
+    margin-left: 130px;
+  }
+  footer div.closing-title p {
+    width: 400px;
+  }
+  footer {
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  footer div.closing-title {
+    margin-left: 40px;
+  }
+  footer div.closing-title p {
+    width: 300px;
+  }
+  footer div.footer-input-section {
+    margin-top: -80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.latest-works {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  div.card-con {
+    width: 200px;
+  }
+  section.section-4 div.client-testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: 60px;
+  }
+  div.client-testimonial {
+    height: auto;
+    width: 200px;
+  }
+  div.client-testimonial h6 {
+    margin-left: -50px;
+  }
+  footer {
+    display: flex;
+    gap: 200px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  footer div.closing-title {
+    margin-left: 130px;
+  }
+  footer div.closing-title p {
+    width: 300px;
+  }
+  footer div.footer-input-section {
+    margin-top: -80px;
+  }
+}
+@media screen and (min-width: 1114px) and (max-width: 1280px) {
+  div.latest-works {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  div.card-con {
+    width: 300px;
+  }
+  section.section-4 div.client-testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  div.client-testimonial {
+    height: auto;
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  div.client-testimonial h6 {
+    margin-left: -15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  div.latest-works {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  div.card-con {
+    width: 400px;
+  }
+  section.section-4 div.client-testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  div.client-testimonial {
+    height: auto;
+    width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  div.client-testimonial h6 {
+    margin-left: -15px;
+  }
+  footer {
+    display: flex;
+    gap: 620px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  footer div.closing-title {
+    margin-left: 130px;
+  }
+  footer div.closing-title p {
+    width: 400px;
+  }
+  footer div.footer-input-section {
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  div.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  div.skills p.subtitle {
+    width: 500px;
+  }
+  div.latest-works {
+    padding-left: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  div.card-con {
+    width: 700px;
+  }
+  section.section-4 div.client-testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  div.client-testimonial {
+    height: auto;
+    width: 570px;
+    font-size: 20px;
+  }
+  div.client-testimonial p.mute {
+    padding-left: 10px;
+  }
+  footer {
+    display: flex;
+    gap: 90rem;
+    margin-top: 50px;
+    align-items: center;
+  }
+  footer div.closing-title {
+    margin-left: 180px;
+  }
+  footer div.closing-title p {
+    width: 400px;
+  }
+  footer div.footer-input-section {
+    margin-top: -50px;
+  }
 }
