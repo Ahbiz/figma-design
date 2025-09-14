@@ -163,7 +163,10 @@ section.section-4 p {
 }
 div.client-testimonial h6 {
   font-size: 16px;
-  margin: -13px;
+  margin-bottom: -13px;
+  margin-left: -9px;
+  margin-right: -13px;
+  margin-top: -13px;
   padding-left: 45px;
 }
 div.client-testimonial .mute {
